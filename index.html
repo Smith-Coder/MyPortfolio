@@ -15,15 +15,17 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero" class="hero-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I’m [Your Name], a passionate developer building modern web applications.</p>
-        <a href="#projects" class="btn">View Projects</a>
+    <section id="hero" class="hero-section">    
+        <div class="hero-text">
+            <h1>Welcome to My Portfolio!</h1>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
     </section>
 
     <section id="about" class="about-section">
@@ -47,28 +49,48 @@
                 <p>A brief description of the project. Built using Python and Flask.</p>
             </div>
         </div>
+        <p class="view-more">
+            <a href="https://github.com/yourusername" target="_blank">View more projects on GitHub</a>
+        </p>
     </section>
 
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <div class="social-links">
-          <a href="mailto:smithcd438@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://github.com/yourusername" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yourusername/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/yourusername/" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
+    <section id="skills" class="skills-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <img src="images/csharp.png" alt="C#" />
+                <p>C#</p>
+            </div>
+            <div class="skill">
+                <img src="images/dotnet.png" alt=".NET" />
+                <p>.NET</p>
+            </div>
+            <div class="skill">
+                <img src="images/mysql.png" alt="MySQL" />
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <img src="images/efcore.png" alt="EF Core" />
+                <p>EF Core</p>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>Connect with me on LinkedIn or check out my projects on GitHub:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yourusername/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>There is no place like 127.0.0.1 haha.</p>
     </footer>
 
     <script src="script.js"></script>
