@@ -231,37 +231,28 @@ section p {
 
 /* Skills Section */
 .skills-list {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 1.5rem; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.2rem;
     margin-top: 3rem;
-    padding: 0 1rem; 
 }
 
 .skill {
-    flex: 1 1 calc(25% - 2rem); 
-    max-width: 150px; 
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.skill img {
-    
-    height: 100px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
-
-.skill img:hover {
-    transform: scale(1.1);
-}
-
-.skill p {
+    background: linear-gradient(145deg, #243140, #1b2430);
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
     font-weight: 600;
     color: #00d8ff;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.skill:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 216, 255, 0.3);
+    background: linear-gradient(145deg, #2b3d50, #223042);
 }
 
 @media (max-width: 768px) {

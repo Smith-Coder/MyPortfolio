@@ -16,16 +16,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form submission handler
-    const contactForm = document.getElementById('contact-form');
-
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        alert(`Thank you for reaching out, ${name}! We will get back to you at ${email}.`);
-        contactForm.reset();
-    });
 });
