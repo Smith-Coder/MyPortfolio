@@ -229,8 +229,11 @@ section p {
     color: #009ac7;
 }
 
+
 /* Skills Section */
-/* Skills Section */
+.skills-section {
+    width: 100%;
+}
 .skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
